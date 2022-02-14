@@ -1,17 +1,13 @@
 {
   "name": "todo-key-server",
-  "version": "1.0.0",
   "description": "Api para fazer a ponte entre o mongodb e o aplicação react",
+  "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "debug": "nodemon server.js"
   },
-  "keywords": [
-    "mongodb",
-    "todo",
-    "api"
-  ],
-  "author": "",
+  "author": "brunodavi",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
@@ -22,6 +18,7 @@
   "devDependencies": {
     "eslint": "^8.9.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.4"
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15"
   }
 }
