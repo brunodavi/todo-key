@@ -1,0 +1,8 @@
+apps:
+  - name: client
+    cwd: ./client
+    script: npm
+    args: start
+
+  - name: server
+    script: ./server/server.js

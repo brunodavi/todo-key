@@ -1,0 +1,23 @@
+{
+  "name": "todo-key",
+  "version": "1.0.0",
+  "description": "Um gerenciador de tarefas que foca em produtividade podendo ser todo controlado pelo teclado",
+  "scripts": {
+    "start": "pm2 start ecosystem.config.yaml",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunodavi/todo-key.git"
+  },
+  "keywords": ["mongodb", "express", "react", "nodejs", "todo-list"],
+  "author": "brunodavi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunodavi/todo-key/issues"
+  },
+  "homepage": "https://github.com/brunodavi/todo-key#readme",
+  "dependencies": {
+    "pm2": "^5.1.2"
+  }
+}
