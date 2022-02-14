@@ -1,13 +1,15 @@
 {
-  "name": "server",
+  "name": "todo-key-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Api para fazer a ponte entre o mongodb e o aplicação react",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "keywords": [
-    "mongodb"
+    "mongodb",
+    "todo",
+    "api"
   ],
   "author": "",
   "license": "ISC",
