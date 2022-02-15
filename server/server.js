@@ -10,6 +10,7 @@ const CORS = {
   methods: ['GET', 'POST', 'DELETE', 'UPDATE'],
 };
 
+app.use(express.json());
 app.use(cors(CORS));
 
 app.listen(PORT, () => {

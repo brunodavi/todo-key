@@ -1,5 +1,6 @@
 const MongoDB = require('./MongoDB');
 
 module.exports = {
-  todo: new MongoDB('tasks'),
+  User: new MongoDB('users'),
+  Task: new MongoDB('tasks'),
 };
