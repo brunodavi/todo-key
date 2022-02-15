@@ -10,8 +10,11 @@ const CORS = {
   methods: ['GET', 'POST', 'DELETE', 'UPDATE'],
 };
 
+const error = require('./middleware/error');
+
 app.use(express.json());
 app.use(cors(CORS));
+app.use(error);
 
 app.listen(PORT, () => {
   console.log(`Rodando api em http://localhost:${PORT}`);
