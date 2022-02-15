@@ -29,7 +29,7 @@ function Router(path, dbName) {
     res.status(OK).send(result);
   }));
 
-  router.update(`/${path}/:id`, rescue(async (req, res) => {
+  router.put(`/${path}/:id`, rescue(async (req, res) => {
     const result = await db.update(req.param.id, req.body);
     res.status(OK).send(result);
   }));
