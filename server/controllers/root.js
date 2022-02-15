@@ -1,7 +1,6 @@
-const user = require('./user');
-const task = require('./task');
+const Router = require('./Router');
 
 module.exports = {
-  user,
-  task,
+  user: Router('user', 'User'),
+  task: Router('task', 'Task'),
 };
