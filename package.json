@@ -10,7 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/brunodavi/todo-key.git"
   },
-  "keywords": ["mongodb", "express", "react", "nodejs", "todo-list"],
+  "keywords": [
+    "mongodb",
+    "express",
+    "react",
+    "nodejs",
+    "todo-list"
+  ],
   "author": "brunodavi",
   "license": "ISC",
   "bugs": {
@@ -18,6 +24,8 @@
   },
   "homepage": "https://github.com/brunodavi/todo-key#readme",
   "dependencies": {
+    "express-rescue": "^1.1.31",
+    "http-status": "^1.5.0",
     "pm2": "^5.1.2"
   }
 }
