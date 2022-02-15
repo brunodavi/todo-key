@@ -7,7 +7,7 @@ const { PORT = 3001 } = process.env;
 
 const CORS = {
   origin: 'http://localhost:3000',
-  methods: ['GET', 'POST', 'DELETE', 'UPDATE'],
+  methods: ['GET', 'POST', 'DELETE', 'PUT'],
 };
 
 const error = require('./middleware/error');
