@@ -1,6 +1,10 @@
-const Router = require('./Router');
+const express = require('express');
 
-module.exports = {
-  user: Router('user', 'User'),
-  task: Router('task', 'Task'),
-};
+const cruder = require('./cruder');
+
+const root = express.Router({ mergeParams: true });
+
+root.use('/user', cruder('User'));
+root.use('/task', cruder('Task'));
+
+module.exports = root;

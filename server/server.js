@@ -15,7 +15,8 @@ const root = require('./controllers/root');
 
 app.use(express.json());
 app.use(cors(CORS));
-app.use(root);
+
+app.use('/', root);
 
 app.use(error);
 
