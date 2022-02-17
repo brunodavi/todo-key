@@ -1,3 +1,5 @@
+const { ObjectId } = require('mongodb');
+
 const connection = require('./connection');
 
 class MongoDB {
@@ -13,7 +15,7 @@ class MongoDB {
   }
 
   async find(id) {
-    return this.db.findOne({ _id: id });
+    return this.db.findOne({ _id: ObjectId(id) });
   }
 
   async create(doc) {
@@ -21,11 +23,11 @@ class MongoDB {
   }
 
   async delete(id) {
-    return this.db.deleteOne({ _id: id });
+    return this.db.deleteOne({ _id: ObjectId(id) });
   }
 
   async update(id, doc) {
-    return this.db.updateOne({ _id: id }, { $set: doc });
+    return this.db.updateOne({ _id: ObjectId(id) }, { $set: doc });
   }
 }
 

@@ -20,17 +20,17 @@ function cruder(dbName) {
   }));
 
   router.get('/:id', rescue(async (req, res) => {
-    const result = await db.find(req.param.id);
+    const result = await db.find(req.params.id);
     res.status(OK).send(result);
   }));
 
   router.delete('/:id', rescue(async (req, res) => {
-    const result = await db.delete(req.param.id);
+    const result = await db.delete(req.params.id);
     res.status(OK).send(result);
   }));
 
   router.put('/:id', rescue(async (req, res) => {
-    const result = await db.update(req.param.id, req.body);
+    const result = await db.update(req.params.id, req.body);
     res.status(OK).send(result);
   }));
 
